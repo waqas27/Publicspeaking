@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewBag.Title = "Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+    <div id="blog">
+
+        <div id="publicspeaking">PUBLIC SPEAKING</div>
+
+        <div id="bdiv">
+            <p class="blog1">
+
+                <h1 id="blog">Blog</h1>
+
+                Fear of public speaking is the most common of all
+                phobias. It's a form of performance anxiety in
+                which a person becomes very concerned that he or
+                she will look visibly anxious, maybe even have a
+                panic attack while speaking. Over time, people try
+                to protect themselves by either avoiding
+                public speaking or by struggling against speech
+                anxiety. In this way, people get Tricked into
+                making the fear of public speaking more chronic
+                and disruptive.
+            </p>
+
+
+            <p class="blog2">
+                Some people do this with avoidance.
+                They choose college coursework in such a way
+                as to avoid public speaking, rather than taking
+                the classes they want. At work, they pass up
+                promotions and assignments which would require
+                speaking. The fear of public speaking may even
+                lead people to choose a career that doesn't call
+                for public speaking, rather than one they want.
+                This is often the case with people who have feared
+                public speaking from a very young age.
+            </p>
+
+            <p class="blog3">
+                Others don't go that far, but will go to great
+                lengths to avoid making presentations, or even
+                just having to speak at a meeting. They may
+                deliberately arrive late, hoping to miss the
+                customary introductions ("let's go around and
+                introduce ourselves...").
+            </p>
+
+
+
+
+
+            <p class="blog3">
+                Many others will gamely accept an assignment
+                and show up to give a speech when it's important
+                to their career. But they try to get through those
+                situations without feeling afraid. They focus on
+                what they feel, rather than on the message
+                they've come to deliver. This is often the
+                case with people whose fear of public speaking
+                developed later in life. The more successful
+                they become in their career, the more they are
+                called upon to share their expertise with groups,
+                and the more anxious they become.
+            </p>
+
+        </div>
+
+
+        <div class="resources">
+            <h2> HELPTFUL<br /> RESOURCES</h2>
+
+        </div>
+        <div class="resources">
+
+            <div id="link1"><h3><a href="https://www.toastmasters.org/">Toastmasters</a></h3></div>
+            <p>International Organisation (free of charge) supports individuals with fear of public speaking.</p>
+        </div>
+        <div class="resources">
+
+            <div id="link1"><h3><a href="https://www.nhs.uk/conditions/social-anxiety/">NHS</a></h3></div>
+            <p>National Health Service(NHS) offers therapies for Social Phobia.</p>
+        </div>
+        <div id="lastdiv">
+
+            <div id="link1"><h3><a href="https://thiswayup.org.au/how-do-you-feel/shy/">Self Help</a></h3></div>
+            <p>Self-help support advises on how to OverCome Fear of PublicSpeaking.</p>
+        </div>
+
+
+        <div id="bdiv2">
+
+            <img class="mySlides" src="~/Images/welcome.jpg">
+            <img class="mySlides" src="~/Images/to.jpg">
+            <img class="mySlides" src="~/Images/my.jpg">
+            <img class="mySlides" src="~/Images/blog.jpg">
+
+
+        </div>
+
+
+        <div id="bdiv1">
+
+            <iframe id="video" src="https://www.youtube.com/embed/Rl7dAKFp1qs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+
+
+
+    </div>
+
+
+
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) { slideIndex = 1 }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>
+
+
+
+
+
